@@ -1,0 +1,6 @@
+@szamonkeres__HostAddress = http://localhost:5162
+
+GET {{szamonkeres__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
