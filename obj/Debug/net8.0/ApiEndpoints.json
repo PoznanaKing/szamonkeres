@@ -53,6 +53,22 @@
   },
   {
     "ContainingType": "szamonkeres_.Controller",
+    "Method": "Delete",
+    "RelativePath": "szamonkeres",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "szamonkeres_.Controller",
     "Method": "Get",
     "RelativePath": "szamonkeres/{id}",
     "HttpMethod": "GET",

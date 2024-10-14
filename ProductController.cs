@@ -75,6 +75,16 @@ namespace szamonkeres_
             conn.Connection.Close();
             return new { message = "Az adat frissülve." };
         }
+        [HttpDelete]
+        public object Delete(int id )
+        {
+            conn.Connection.Open ();
+            string sql = $"DELETE FROM `szamonkeres` WHERE `id`={id}";
+            MySqlCommand cmd = new MySqlCommand(sql, conn.Connection);
+            cmd.ExecuteNonQuery();
+            conn.Connection.Close();
+            return new { message = "Az adat sikeresen törölve lett." };
+        }
     }
 }
     
