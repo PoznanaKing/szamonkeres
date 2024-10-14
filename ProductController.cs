@@ -52,6 +52,18 @@ namespace szamonkeres_
             temp.létrehozás_deje = dr.GetString(3);
             return temp;
         }
+        [HttpPost]
+
+        public object Post(Tanulo adder)
+        {
+            conn.Connection.Open();
+            string sql = $"INSERT INTO `szamonkeres`(`id`, `jegy`, `leírás`, `létrehozás_deje`) VALUES ('{adder.Id}','{adder.jegy}','{adder.Description}','{DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")}')";
+            MySqlCommand cmd = new MySqlCommand(sql, conn.Connection);
+            cmd.ExecuteNonQuery();
+
+            conn.Connection.Close();
+            return new {message="Az adat felvíve." };
+        }
         
     }
 }

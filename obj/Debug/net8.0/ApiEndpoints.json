@@ -21,6 +21,22 @@
   },
   {
     "ContainingType": "szamonkeres_.Controller",
+    "Method": "Post",
+    "RelativePath": "szamonkeres",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adder",
+        "Type": "szamonkeres_.Tanulo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "szamonkeres_.Controller",
     "Method": "Get",
     "RelativePath": "szamonkeres/{id}",
     "HttpMethod": "GET",
