@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Okt 14. 09:32
+-- Létrehozás ideje: 2024. Okt 14. 09:35
 -- Kiszolgáló verziója: 10.4.20-MariaDB
 -- PHP verzió: 7.3.29
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `szamonkeres`
 --
+CREATE DATABASE IF NOT EXISTS `szamonkeres` DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+USE `szamonkeres`;
 
 -- --------------------------------------------------------
 
