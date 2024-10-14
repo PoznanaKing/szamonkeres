@@ -64,7 +64,17 @@ namespace szamonkeres_
             conn.Connection.Close();
             return new {message="Az adat felvíve." };
         }
-        
+
+        [HttpPut]
+        public object Put(Tanulo ujAdat)
+        {
+            conn.Connection.Open();
+            string sql = $"UPDATE `szamonkeres` SET `id`='{ujAdat.Id}',`jegy`='{ujAdat.jegy}',`leírás`='{ujAdat.Description}',`létrehozás_deje`='{DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")}' WHERE 1";
+            MySqlCommand cmd = new MySqlCommand( sql, conn.Connection);
+            cmd.ExecuteNonQuery();
+            conn.Connection.Close();
+            return new { message = "Az adat frissülve." };
+        }
     }
 }
     

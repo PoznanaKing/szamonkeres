@@ -37,6 +37,22 @@
   },
   {
     "ContainingType": "szamonkeres_.Controller",
+    "Method": "Put",
+    "RelativePath": "szamonkeres",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ujAdat",
+        "Type": "szamonkeres_.Tanulo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "szamonkeres_.Controller",
     "Method": "Get",
     "RelativePath": "szamonkeres/{id}",
     "HttpMethod": "GET",
