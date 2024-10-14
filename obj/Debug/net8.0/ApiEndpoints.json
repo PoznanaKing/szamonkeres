@@ -2,7 +2,7 @@
   {
     "ContainingType": "szamonkeres_.Controller",
     "Method": "Get",
-    "RelativePath": "",
+    "RelativePath": "szamonkeres",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,6 +10,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[szamonkeres_.Tanulo, szamonkeres_, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "szamonkeres_.Controller",
+    "Method": "Get",
+    "RelativePath": "szamonkeres/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "szamonkeres_.Tanulo",
         "MediaTypes": [
           "text/plain",
           "application/json",

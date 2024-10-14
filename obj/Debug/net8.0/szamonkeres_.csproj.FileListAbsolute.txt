@@ -47,3 +47,4 @@ C:\GitWorkRepos\szamonkeres\szamonkeres_\obj\Debug\net8.0\refint\szamonkeres_.dl
 C:\GitWorkRepos\szamonkeres\szamonkeres_\obj\Debug\net8.0\szamonkeres_.pdb
 C:\GitWorkRepos\szamonkeres\szamonkeres_\obj\Debug\net8.0\szamonkeres_.genruntimeconfig.cache
 C:\GitWorkRepos\szamonkeres\szamonkeres_\obj\Debug\net8.0\ref\szamonkeres_.dll
+C:\GitWorkRepos\szamonkeres\szamonkeres_\obj\Debug\net8.0\szamonkeres_.sourcelink.json
